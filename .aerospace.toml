@@ -1,0 +1,71 @@
+after-login-command = []
+after-startup-command = []
+
+start-at-login = true
+
+[gaps]
+# Espacio entre ventanas (inner) y entre ventanas y bordes de pantalla (outer)
+inner.horizontal = 15
+inner.vertical   = 15
+outer.left       = 15
+outer.bottom     = 15
+outer.top        = 15
+outer.right      = 15
+
+[mode.main.binding]
+alt-h = 'focus left'
+alt-l = 'focus right'
+alt-k = 'focus up'
+alt-j = 'focus down'
+
+alt-shift-h = 'move left'
+alt-shift-l = 'move right'
+alt-shift-k = 'move up'
+alt-shift-j = 'move down'
+
+alt-ctrl-h = 'resize width -50'
+alt-ctrl-l = 'resize width +50'
+alt-ctrl-k = 'resize height -50'
+alt-ctrl-j = 'resize height +50'
+
+alt-slash        = 'layout tiles horizontal vertical'   # alternar tiles/stack
+alt-comma        = 'layout accordion horizontal vertical'
+alt-f            = 'layout floating tiling'             # flotante ↔ tiling
+alt-shift-f      = 'fullscreen'                         # pantalla completa
+
+alt-1 = 'workspace 1'
+alt-2 = 'workspace 2'
+alt-3 = 'workspace 3'
+alt-4 = 'workspace 4'
+alt-5 = 'workspace 5'
+
+alt-shift-1 = 'move-node-to-workspace 1'
+alt-shift-2 = 'move-node-to-workspace 2'
+alt-shift-3 = 'move-node-to-workspace 3'
+alt-shift-4 = 'move-node-to-workspace 4'
+alt-shift-5 = 'move-node-to-workspace 5'
+
+alt-tab         = 'move-workspace-to-monitor --wrap-around next'
+alt-shift-tab   = 'move-workspace-to-monitor --wrap-around prev'
+
+alt-ctrl-1 = 'focus-monitor 1'   # Monitor izquierdo
+alt-ctrl-2 = 'focus-monitor 2'   # Monitor central (principal)
+alt-ctrl-3 = 'focus-monitor 3'   # Monitor derecho
+
+alt-shift-ctrl-1 = ['move-node-to-monitor 1', 'focus-monitor 1']
+alt-shift-ctrl-2 = ['move-node-to-monitor 2', 'focus-monitor 2']
+alt-shift-ctrl-3 = ['move-node-to-monitor 3', 'focus-monitor 3']
+
+alt-shift-semicolon = 'mode service'
+
+[mode.service.binding]
+esc          = 'mode main'
+r            = ['reload-config', 'mode main']
+alt-shift-r  = ['reload-config', 'mode main']
+
+[workspace-to-monitor-force-assignment]
+1 = 'C34J79x'              # Monitor ultrawide → workspace 1
+2 = 'C34J79x'              # Monitor ultrawide → workspace 2
+3 = 'Built-in Retina Display'  # Monitor del Mac → workspace 3
+4 = 'LG QHD'               # Monitor LG → workspace 4
+5 = 'LG QHD'               # Monitor LG → workspace 5
