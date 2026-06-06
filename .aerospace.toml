@@ -64,8 +64,8 @@ r            = ['reload-config', 'mode main']
 alt-shift-r  = ['reload-config', 'mode main']
 
 [workspace-to-monitor-force-assignment]
-1 = 'C34J79x'              # Monitor ultrawide → workspace 1
-2 = 'C34J79x'              # Monitor ultrawide → workspace 2
+1 = 'Odyssey G75F'              # Monitor ultrawide → workspace 1
+2 = 'Odyssey G75F'              # Monitor ultrawide → workspace 2
 3 = 'Built-in Retina Display'  # Monitor del Mac → workspace 3
 4 = 'LG QHD'               # Monitor LG → workspace 4
 5 = 'LG QHD'               # Monitor LG → workspace 5
